@@ -15,7 +15,7 @@
 
     <div class="card mt-5">
         <div class="card-header bg-primary text-white">
-            <h2 id="formTitle" class="mb-0">Add Student</h2>
+            <h2 id="StudentformTitle" class="mb-0">Add Student</h2>
         </div>
         <div class="card-body">
 
@@ -64,13 +64,16 @@
             <td th:text="${student.address}"></td>
             <td th:text="${student.phone}"></td>
             <td class="text-center">
-                <button th:onclick="|updateStudent(${student.studentId})|" class="btn btn-primary btn-sm me-2">
+                <a th:href="@{/students/edit/{id}(id=${student.studentId})}" class="btn btn-primary btn-sm me-2">
                     <i class="bi bi-pencil-square"></i> Update
-                </button>
+                </a>
 
-                <button th:onclick="|deleteStudent(${student.studentId})|" class="btn btn-danger btn-sm">
+                <a th:href="@{/students/delete/{id}(id=${student.studentId})}"
+                   class="btn btn-danger btn-sm"
+                   onclick="return confirm('Are you sure you want to delete this student?');">
                     <i class="bi bi-trash"></i> Delete
-                </button>
+                </a>
+
             </td>
 
         </tr>

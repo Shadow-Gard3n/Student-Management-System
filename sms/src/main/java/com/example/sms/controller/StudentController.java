@@ -32,6 +32,13 @@ public class StudentController {
         return "redirect:/students";
     }
 
+    @GetMapping("/edit/{id}")
+    public String showUpdateForm(@PathVariable Integer id, Model model) {
+        model.addAttribute("studentId", id);
+        return "studentUpdate";
+    }
+
+
     @PostMapping("/update")
     public String updateStudent(@ModelAttribute StudentUpdateDTO studentUpdateDTO) {
         studentService.updateStudent(studentUpdateDTO);
