@@ -1,0 +1,34 @@
+/* styles.css */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.table-header {
+    background-color: #f8f9fa;
+}
+
+.action-buttons {
+    min-width: 200px;
+}
+
+.form-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.btn-group-spacing button {
+    margin-right: 8px;
+}
+
+.student-table {
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.form-label {
+    font-weight: 500;
+}
