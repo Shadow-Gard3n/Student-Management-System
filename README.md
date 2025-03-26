@@ -1,8 +1,8 @@
-# STILL WORKING ON IT
+# Just for learning purpose
 
 I made this project using tutorial on youtube for learning purpose
 
-# SOURCE
+### SOURCE
 ```
 https://youtu.be/F_zN7lC4-hQ?si=iQOoHFNc8OgAvSL-
 ```
